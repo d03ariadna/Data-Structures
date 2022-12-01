@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="GraphViews\GraphV.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphViews\PrintMat.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphViews\Shortest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphViews\TraversingGraph.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GraphViews\VertexFound.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TreeViews\NodeFound.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TreeViews\PrintTree.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TreeViews\TraversingTree.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GraphViews\GraphV.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphViews\PrintMat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphViews\Shortest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphViews\TraversingGraph.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GraphViews\VertexFound.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TreeViews\NodeFound.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TreeViews\PrintTree.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TreeViews\TraversingTree.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,135 @@
+﻿<Window x:Class="Interfaz.TreeViews.NodeFound"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interfaz.TreeViews"
+        mc:Ignorable="d"
+        Title="Trees" Height="450" Width="600"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+
+    <Border Background="#f2f2f2"
+            CornerRadius="20">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="190"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Text="Node Found"
+                FontSize="50"
+                Margin="0,100,0,0"/>
+
+            <TextBox Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Name="txtNodeF"
+                Margin="100,90,0,20"
+                Text="N"
+                FontSize="40"
+                TextAlignment="Center"
+                Padding="10"
+                Foreground="DarkBlue"/>
+
+            <Button Grid.Column="5"
+                x:Name="btnBack"
+                Content="Back"
+                Margin="0,20,30,110"
+                FontSize="15"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="#000"
+                FontWeight="Bold" Click="btnBack_Click"
+                Cursor="Hand"/>
+
+            <TextBlock Grid.Column="1"
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                Text="Parent"
+                FontSize="20"
+                Margin="0,40,0,0"/>
+
+            <TextBox Grid.Column="1"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Name="txtParent"
+                Margin="80,30,60,40"
+                Text="N"
+                FontSize="30"
+                TextAlignment="Center"
+                Padding="10"
+                Foreground="Gray"/>
+
+            <TextBlock Grid.Column="3"
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                Text="Left Child"
+                FontSize="20"
+                Margin="30,40,0,0"/>
+
+            <TextBox Grid.Column="3"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Name="txtLeft"
+                Margin="140,30,0,40"
+                Text="N"
+                FontSize="30"
+                TextAlignment="Center"
+                Padding="10"
+                Foreground="Gray"/>
+
+            <TextBlock Grid.Column="1"
+                Grid.Row="2"
+                Grid.ColumnSpan="3"
+                Text="Level"
+                FontSize="20"
+                Margin="0,20,0,0"/>
+
+            <TextBox Grid.Column="1"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Name="txtLevel"
+                Margin="80,10,60,60"
+                Text="N"
+                FontSize="30"
+                TextAlignment="Center"
+                Padding="10"
+                Foreground="Gray"/>
+
+            <TextBlock Grid.Column="3"
+                Grid.Row="2"
+                Grid.ColumnSpan="3"
+                Text="Rigth Child"
+                FontSize="20"
+                Margin="30,20,0,0"/>
+
+            <TextBox Grid.Column="3"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Name="txtRight"
+                Margin="140,10,0,60"
+                Text="N"
+                FontSize="30"
+                TextAlignment="Center"
+                Padding="10"
+                Foreground="Gray"/>
+
+        </Grid>
+    </Border>
+</Window>

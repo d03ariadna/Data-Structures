@@ -1,0 +1,50 @@
+﻿<Window x:Class="Interfaz.TreeViews.PrintTree"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interfaz.TreeViews"
+        mc:Ignorable="d"
+        Title="Trees" Height="450" Width="600"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+    <Border Background="#f2f2f2"
+            CornerRadius="20">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                Text="Our Tree"
+                FontSize="50"
+                HorizontalAlignment="Center"
+                Margin="0,30,0,0"/>
+
+            <Button x:Name="btnBack"
+                Content="Back"
+                Margin="520,30,40,30"
+                FontSize="15"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="#000"
+                FontWeight="Bold" Click="btnBack_Click"
+                Cursor="Hand"/>
+
+            <TextBlock Grid.Row="1"
+                Name="txtPrinted"
+                Text="The tree will appear here"
+                Margin="100, 50"
+                TextAlignment="Center"
+                FontSize="60"
+                Foreground="Gray"/>
+
+        </Grid>
+    </Border>
+
+</Window>

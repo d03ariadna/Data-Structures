@@ -1,0 +1,229 @@
+﻿<Window x:Class="Interfaz.GraphViews.GraphV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interfaz.GraphViews"
+        mc:Ignorable="d"
+        Title="Trees" Height="450" Width="600"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+
+    <Border Background="#f2f2f2"
+            CornerRadius="20">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="120"/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock x:Name="Title"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Text="Graphs"
+                Margin="80,30,0,0"
+                FontSize="70"/>
+
+            <Button Grid.Column="5"
+                x:Name="btnBack"
+                Content="Back"
+                Margin="0,40,30,50"
+                FontSize="15"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="#000"
+                FontWeight="Bold" Click="btnBack_Click"
+                Cursor="Hand"/>
+
+            <TextBlock Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="80,0,0,0"
+                Text="Insert a Vertex"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <TextBox x:Name="txtVertex"
+                Text="V"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                Grid.Row="1"
+                Margin="0,15,20,15"
+                BorderBrush="Transparent"
+                TextAlignment="Center"
+                Padding="10"
+                FontSize="30"
+                />
+
+            <TextBlock Grid.Row="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="40,0,0,0"
+                Text="Insert its link"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <TextBox x:Name="txtLink"
+                Text="V"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"
+                Margin="40,15,80,15"
+                BorderBrush="Transparent"
+                TextAlignment="Center"
+                Padding="10"
+                FontSize="30"
+                Foreground="Gray"/>
+
+            <!--VERTEX-->
+
+            <Button x:Name="btnInsert"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Width="50"
+                Height="50"
+                Margin="75,0,75,60"
+                Background="#1363DF"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnInsert_Click">
+                <Image Source="insert.png" Width="30"/>
+            </Button>
+
+            <Button x:Name="btnSearch"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                Grid.Row="2"
+                Width="50"
+                Height="50"
+                Margin="50,0,0,60"
+                Background="#06283D"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnSearch_Click">
+                <Image Source="search.png" Width="30" Visibility="Visible"/>
+            </Button>
+
+            <Button x:Name="btnRemove"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                Grid.Row="2"
+                Width="50"
+                Height="50"
+                Margin="25,0,25,60"
+                Background="#F32424"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnRemove_Click">
+                <Image Source="delete.png" Width="30"/>
+            </Button>
+
+            <!--EDGE BUTTONS-->
+            
+            <TextBox x:Name="txtPrice"
+                Text="$"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                Grid.Row="2"
+                Width="50"
+                Height="50"
+                Margin="30,0,0,60"
+                Background="#FFF"
+                Foreground="gray"
+                FontSize="30"
+                TextAlignment="Center"
+                Padding="3">
+            </TextBox>
+
+            <Button x:Name="btnInsertE"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Width="50"
+                Height="50"
+                Margin="90,0,30,60"
+                Background="#1363DF"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnInsertE_Click">
+                <Image Source="insert.png" Width="30"/>
+            </Button>
+
+            <Button x:Name="btnRemoveE"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Width="50"
+                Height="50"
+                Margin="0,0,0,60"
+                Background="#F32424"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnRemoveE_Click">
+                <Image Source="delete.png" Width="30"/>
+            </Button>
+
+            <!--OTHERS-->
+
+            <Button x:Name="btnPrint"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                Width="180"
+                Height="50"
+                Margin="10,10,10,25"
+                Content="Print Matriz"
+                Background="#bbb"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnPrint_Click"/>
+            
+            <Button x:Name="btnTraverse"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="3"
+                Width="180"
+                Height="50"
+                Margin="80,30,40,20"
+                Content="Traverse"
+                Background="#bbb"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnTraverse_Click"/>
+
+            <Button x:Name="btnShortest"
+                Grid.Column="3"
+                Grid.ColumnSpan="3"
+                Grid.Row="3"
+                Width="180"
+                Height="50"
+                Margin="40,30,80,20"
+                Content="Shortest Path"
+                Background="#bbb"
+                Foreground="#fff"
+                FontSize="15"
+                Cursor="Hand" Click="btnShortest_Click"/>
+
+        </Grid>
+
+    </Border>
+</Window>

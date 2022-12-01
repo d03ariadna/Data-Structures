@@ -1,0 +1,15 @@
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\bin\Debug\net6.0\Store.cs.exe
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\bin\Debug\net6.0\Store.cs.deps.json
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\bin\Debug\net6.0\Store.cs.runtimeconfig.json
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\bin\Debug\net6.0\Store.cs.dll
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\bin\Debug\net6.0\Store.cs.pdb
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.csproj.AssemblyReference.cache
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.AssemblyInfoInputs.cache
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.AssemblyInfo.cs
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.csproj.CoreCompileInputs.cache
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.dll
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\refint\Store.cs.dll
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.pdb
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\Store.cs.genruntimeconfig.cache
+C:\Users\dora_\OneDrive\Documentos\University\ADS\Store.cs\obj\Debug\net6.0\ref\Store.cs.dll

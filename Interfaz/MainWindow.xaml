@@ -1,0 +1,75 @@
+﻿<Window x:Class="Interfaz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interfaz"
+        mc:Ignorable="d"
+        Title="Data Structures" Height="450" Width="650"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+    
+    <Border Background="#f2f2f2"
+            CornerRadius="20">
+        <Grid Name="Main">
+            <!--Window Border-->
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <TextBlock Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    Grid.ColumnSpan="2"
+                    Margin="0,100,0,0"
+                    Text="Welcome to ADS"
+                    FontSize="60"/>
+
+            <TextBlock Grid.Row="1"
+                Name="txtPerson"
+                Text="Please choose an option"
+                HorizontalAlignment="Center"
+                Grid.ColumnSpan="2"
+                VerticalAlignment="Center"/>
+
+            <Button x:Name="btnTrees"
+                    Grid.Row="2"
+                    Height="90"
+                    Width="200"
+                    Margin="60,0,0,60"
+                    Padding="10,0"
+                    Content="Tree Structure"
+                    Background="Transparent"
+                    FontSize="25"
+                    FontWeight="DemiBold"
+                    BorderBrush="Transparent" Click="btnTrees_Click"
+                    Cursor="Hand"/>
+
+            <Button x:Name="btnGraphs"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Height="90"
+                    Width="210"
+                    Margin="00,0,60,60"
+                    Padding="10,0"
+                    Content="Graph Structure"
+                    Background="Transparent"
+                    FontSize="25"
+                    FontWeight="DemiBold"
+                    BorderBrush="Transparent"
+                    Cursor="Hand" Click="btnGraphs_Click"/>
+
+        </Grid>
+    </Border>
+</Window>
